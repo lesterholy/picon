@@ -1,0 +1,21 @@
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Local app bundles and release artifacts
+build/
+*.app
+*.dSYM
+*.zip
+*.sha256
+
+# Local runtime and orchestration state
+.omx/
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+DerivedData/
