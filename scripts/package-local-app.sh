@@ -14,6 +14,7 @@ rm -rf "$APP_DIR"
 mkdir -p "$MACOS_DIR" "$RESOURCES_DIR"
 
 cp ".build/release/Picon" "$MACOS_DIR/Picon"
+cp "Resources/Picon.icns" "$RESOURCES_DIR/Picon.icns"
 
 cat > "$CONTENTS_DIR/Info.plist" <<'PLIST'
 <?xml version="1.0" encoding="UTF-8"?>
@@ -26,6 +27,8 @@ cat > "$CONTENTS_DIR/Info.plist" <<'PLIST'
     <string>Picon</string>
     <key>CFBundleIdentifier</key>
     <string>local.picon.imagehost</string>
+    <key>CFBundleIconFile</key>
+    <string>Picon</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
